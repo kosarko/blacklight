@@ -108,6 +108,8 @@ module Blacklight::RenderPartialsHelperBehavior
     ]
   end
 
+  private
+
   ##
   # Return a normalized partial name for rendering a single document
   #
@@ -120,9 +122,6 @@ module Blacklight::RenderPartialsHelperBehavior
 
     type_field_to_partial_name(document, display_type)
   end
-  deprecation_deprecate document_partial_name: 'Moving to a private method'
-
-  private
 
   ##
   # Return a partial name for rendering a document
